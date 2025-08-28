@@ -12,8 +12,8 @@ class FlappyBirdGame {
     this.isGameOver = false;
     this.gameWidth = 800;
     this.gameHeight = 600;
-    this.gravity = 0.5;
-    this.jumpForce = -8;
+    this.gravity = 0.1;
+    this.jumpForce = -3;
     this.pipeSpeed = 2;
     this.pipeGap = 150;
     this.birdSize = 30;
@@ -394,4 +394,5 @@ window.FlappyBirdGame = FlappyBirdGame;
 // Auto-start if environment is already loaded
 if (window.ENVIRONMENT_CONFIG) {
   new FlappyBirdGame(window.ENVIRONMENT_CONFIG);
+
 }
